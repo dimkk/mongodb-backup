@@ -20,7 +20,7 @@ rm -f /backup.sh
 cat <<EOF >> /backup.sh
 #!/bin/bash
 MAX_BACKUPS=${MAX_BACKUPS}
-BACKUP_NAME=\$(date +\%Y.\%m.\%d.\%H\%M\%S)
+BACKUP_NAME=\$(date +\%Y.\%m.\%d.\%H)
 
 echo "=> Backup started"
 if ${BACKUP_CMD} ;then
